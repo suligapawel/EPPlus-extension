@@ -5,8 +5,10 @@ using System.Linq;
 
 namespace XlsxCreator
 {
-    public class XlsxCreator
+    public class XlsxFileCreator
     {
+        public const string XLSX_MIME = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
+
         public byte[] GetFileAsByteArray(IDataPreparator preparator, bool withHeaders)
         {
             using (var xlsxPackage = new ExcelPackage())
