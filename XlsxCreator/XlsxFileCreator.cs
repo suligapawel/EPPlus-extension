@@ -69,7 +69,7 @@ namespace XlsxCreator
         private static void TryFormatDateCell(ExcelWorksheet worksheet, int row, int column, object rowInfo)
         {
             if (rowInfo is DateTime)
-                worksheet.Cells[row, column].Style.Numberformat.Format = "yyyy-mm-dd";
+                worksheet.Cells[row, column].Style.Numberformat.Format = "yyyy-MM-dd HH:mm";
         }
     }
 }
